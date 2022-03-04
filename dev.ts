@@ -2,15 +2,15 @@
 import { build } from "estrella";
 
 build({
-  entry: ["./src/index.ts", "./src/style.css"],
-  outdir: "dist",
-  sourceRoot: "src",
-  watch: true,
-  bundle: false,
-  minify: false,
+	entry: ["./src/index.tsx", "./src/style.css"],
+	outdir: "dist",
+	sourceRoot: "src",
+	watch: true,
+	bundle: true,
+	minify: false,
 
-  tslint: "on",
-  sourcemap: "inline",
-  sourcesContent: true,
-  run: "npx serve -n -l 3000 dist",
+	tslint: "on",
+	sourcemap: "inline",
+	sourcesContent: true,
+	run: "npx serve -n -l 3000 dist",
 });
