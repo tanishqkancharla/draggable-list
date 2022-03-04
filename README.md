@@ -1,6 +1,3 @@
-Frontend app boilerplate built with esbuild, typescript, vercel.
+React draggable list
 
-```
-npm run dev
-npm run build
-```
+Slight modifications on https://github.com/ccorcos/draggable-list
