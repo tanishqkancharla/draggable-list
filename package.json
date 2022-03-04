@@ -1,0 +1,23 @@
+{
+  "name": "title",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "src/index.ts",
+  "scripts": {
+    "clear": "mkdir -p dist && rm -rf dist/* && cp public/* dist",
+    "dev": "npm run clear && ts-node ./dev.ts",
+    "build": "npm run clear && ts-node ./build.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanishq Kanchalra",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.13.15",
+    "estrella": "^1.4.1",
+    "ts-node": "^10.6.0"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.6.2"
+  }
+}
