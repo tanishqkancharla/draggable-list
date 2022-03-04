@@ -1,27 +1,28 @@
 {
-  "name": "title",
-  "version": "1.0.0",
-  "description": "description",
-  "main": "src/index.ts",
-  "scripts": {
-    "clear": "mkdir -p dist && rm -rf dist/* && cp public/* dist",
-    "dev": "npm run clear && ts-node ./dev.ts",
-    "build": "npm run clear && ts-node ./build.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tanishq Kanchalra",
-  "license": "ISC",
-  "devDependencies": {
-    "esbuild": "^0.13.15",
-    "estrella": "^1.4.1",
-    "ts-node": "^10.6.0",
-    "typescript": "^4.6.2"
-  },
-  "dependencies": {
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.13",
-    "motion": "^10.6.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  }
+	"name": "title",
+	"version": "1.0.0",
+	"description": "description",
+	"main": "src/index.ts",
+	"scripts": {
+		"clear": "mkdir -p dist && rm -rf dist/* && cp public/* dist",
+		"dev": "npm run clear && ts-node ./dev.ts",
+		"build": "npm run clear && ts-node ./build.ts",
+		"deploy": "npx vercel deploy",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Tanishq Kanchalra",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/react": "^17.0.39",
+		"@types/react-dom": "^17.0.13",
+		"esbuild": "^0.13.15",
+		"estrella": "^1.4.1",
+		"ts-node": "^10.6.0",
+		"typescript": "^4.6.2",
+		"vercel": "^24.0.0"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	}
 }
